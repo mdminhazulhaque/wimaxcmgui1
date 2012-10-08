@@ -1,0 +1,13 @@
+#!/bin/bash
+# Author: Minhazul Haq Shawon <minhazul.haq@gmail.com> 2012
+# Always thanks to: Aniruddha Adhikary <aniruddha@adhikary.net>
+if [ $# != 3 ]
+    then
+    echo "Please input correct args: <uid> <passwd> <mac>"
+    exit 0;
+fi
+
+wimaxc set UserIdentity $1
+wimaxc set UserPassword $2
+wimaxc set TTLSAnonymousIdentity $3@banglalion.com.bd
+wimaxc options save

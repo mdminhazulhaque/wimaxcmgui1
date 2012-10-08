@@ -1,0 +1,6 @@
+To build, do:
+
+qmake
+make
+
+Then you'll get the binary "wimaxcmgui" in this directory.

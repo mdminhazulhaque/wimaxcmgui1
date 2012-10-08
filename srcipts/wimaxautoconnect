@@ -1,0 +1,6 @@
+#!/bin/bash
+# Author: Minhazul Haq Shawon <minhazul.haq@gmail.com> 2012
+# Always thanks to: Aniruddha Adhikary <aniruddha@adhikary.net>
+
+echo "Searching ..."
+wimaxc connect $(wimaxc search | tail -4 | awk '{print $7, $4, $5}' | sort -rn | awk '{print $2, $3}' | head -1)

@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="about">images/TabIcons/about.png</file>
+        <file alias="status">images/TabIcons/status.png</file>
+        <file alias="tools">images/TabIcons/tools.png</file>
+        <file alias="user">images/TabIcons/user.png</file>
+        <file alias="connect">images/StatusIcons/connect.png</file>
+        <file alias="connected">images/StatusIcons/connected.png</file>
+        <file alias="disconnect">images/StatusIcons/disconnect.png</file>
+        <file alias="exit">images/StatusIcons/exit.png</file>
+        <file alias="nodevice">images/StatusIcons/nodevice.png</file>
+        <file alias="1">images/StatusIcons/net1.png</file>
+        <file alias="2">images/StatusIcons/net2.png</file>
+        <file alias="3">images/StatusIcons/net3.png</file>
+        <file alias="4">images/StatusIcons/net4.png</file>
+        <file alias="5">images/StatusIcons/net5.png</file>
+        <file alias="activate">images/AccountIcons/activate.png</file>
+        <file alias="load">images/AccountIcons/load.png</file>
+        <file alias="remove">images/AccountIcons/remove.png</file>
+        <file alias="save">images/AccountIcons/save.png</file>
+        <file alias="console">images/ToolsIcon/console.png</file>
+        <file alias="help">images/ToolsIcon/help.png</file>
+        <file alias="manual">images/ToolsIcon/manual.png</file>
+        <file alias="up">images/ToolsIcon/up.png</file>
+        <file alias="home">images/AboutIcons/home.png</file>
+        <file alias="mail">images/AboutIcons/mail.png</file>
+        <file alias="mac">images/AccountIcons/mac.png</file>
+        <file alias="disconnected">images/StatusIcons/disconnected.png</file>
+        <file alias="config">images/ToolsIcon/configure.png</file>
+        <file alias="wimaxcmgui">images/wimaxcmgui.png</file>
+        <file alias="bin">images/ToolsIcon/bin.png</file>
+        <file alias="0">images/StatusIcons/netdisabled.png</file>
+    </qresource>
+</RCC>

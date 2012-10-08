@@ -1,0 +1,10 @@
+ChangeLog for wimaxcmgui
+
+2012-04-29 - v1.0.0
+	* Initial version of wimaxcmgui.
+2012-05-04 - v1.0.1
+	* Added freeze protection while searching.
+	* Fixed status bar message capitalization.
+	* Added "Young Hero" to Aniruddha Adhikary's credit.
+	* Added auto terminal detection
+	* Changed saved UID filename.

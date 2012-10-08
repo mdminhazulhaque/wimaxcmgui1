@@ -1,0 +1,35 @@
+#!/bin/bash
+# Author: Minhazul Haq Shawon <minhazul.haq@gmail.com> 2012
+# Always thanks to: Aniruddha Adhikary <aniruddha@adhikary.net>
+
+# Sample Input: wimaxupdateconfig ca.pem macxvi.cfg macxvi200.bin
+
+if [ $# != 3 ]
+    then
+    echo "Please input correct args: <*.pem> <*.bin> <*.cfg>"
+    exit 0;
+fi
+
+# Check root
+if [ $(whoami) != "root" ]
+then
+  echo -e "\033[41;7mYou Must Run This Script As Root!\033[0m"
+  exit 0
+fi
+
+# Removing Old Files
+rm -f /etc/wimaxcert.pem
+rm -f /lib/firmware/macxvi.cfg
+rm -f /lib/firmware/macxvi200.bin
+
+# Copying New Files
+cp -f -T "$1" /etc/wimaxcert.pem
+cp -f "$2" "$3" /lib/firmware/
+
+# Check if successful
+if [ -f /lib/firmware/macxvi.cfg ] && [ -f /lib/firmware/macxvi200.bin ] && [ -f /etc/wimaxcert.pem ]
+    then
+	echo "Files Updated Successfully!"
+else
+	echo "There Was An Error!"
+fi
